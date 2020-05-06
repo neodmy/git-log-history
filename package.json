@@ -1,0 +1,32 @@
+{
+  "name": "git-pr-template-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neodmy/git-pr-template-maker.git"
+  },
+  "author": "David Miguel Yusta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neodmy/git-pr-template-maker/issues"
+  },
+  "homepage": "https://github.com/neodmy/git-pr-template-maker#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1"
+  }
+}
