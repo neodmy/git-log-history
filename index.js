@@ -9,13 +9,13 @@ const options = yargs
   .usage('Usage: $0 [options]')
   .alias('h', 'help')
   .option('f', {
-    alias: 'file', describe: 'Relative path from root directory to pull request template', type: 'string',
+    alias: 'file', describe: 'Relative path from root directory to pull request template', type: 'string', requiresArg: true, nargs: 1,
   })
   .option('p', {
-    alias: 'pattern', describe: 'Pattern to replace in target file. Default: "<% changelog %>"', type: 'string',
+    alias: 'pattern', describe: 'Pattern to replace in target file. Default: "<% changelog %>"', type: 'string', requiresArg: true, nargs: 1, implies: 'f',
   })
   .option('l', {
-    alias: 'log', describe: 'git log --pretty=<log>. Default: format:- %h %s by <username_or_name>', type: 'string',
+    alias: 'log', describe: 'Options to be append to git log --pretty=<log>. Default: format:- %h %s by <username_or_name>', type: 'string', requiresArg: true,
   })
   .example('$0 -f .github/pull_request_templat.md',
     'Replace <% changelog %> in .github/pull_request_temaplate.md with commit history formatted with --pretty=format:- %h %s by <username_or_name>')
