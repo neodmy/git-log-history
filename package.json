@@ -1,5 +1,5 @@
 {
-  "name": "git-commit-parser",
+  "name": "git-log-history",
   "version": "1.0.0",
   "description": "A CLI tool that gets current branch log commit history and writes them to a pull request template",
   "main": "index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neodmy/git-commit-parser.git"
+    "url": "git+https://github.com/neodmy/git-log-history.git"
   },
   "keywords": [
     "git",
@@ -25,9 +25,9 @@
   "author": "David Miguel Yusta (david.yusta@guidesmiths.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neodmy/git-commit-parser/issues"
+    "url": "https://github.com/neodmy/git-log-history/issues"
   },
-  "homepage": "https://github.com/neodmy/git-commit-parser#readme",
+  "homepage": "https://github.com/neodmy/git-log-history#readme",
   "dependencies": {
     "gitlog": "^4.0.0",
     "yargs": "^15.3.1"

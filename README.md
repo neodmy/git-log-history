@@ -1,4 +1,4 @@
-# Git commit parser
+# Git log history
 
 A CLI tool that gets current branch log commit history and writes them to a pull request template
 
