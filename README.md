@@ -36,7 +36,7 @@ npm install git-commit-parser
 | `--version`         | Show version                                                     |                                              |                    |
 | `-f, --file`        | Relative path from root directory to pull request template file  |                                              | :white_check_mark: |
 | `-p, --pattern`     | Pattern to be replaced in file                                   | `"<% changelog %>"`                          |                    |
-| `-l, --log`         | Git log --pretty options                                         | `format:- %h %s by <username | name>`        |                    |
+| `-l, --log`         | Git log --pretty options                                         | `format:- %h %s by <username_or_name>`        |                    |
 
 ---
 ## Examples
