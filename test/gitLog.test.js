@@ -1,4 +1,6 @@
-const { getCurrentBranch, getLog, getUsername, getName } = require('../lib/gitLog');
+const {
+  getCurrentBranch, getLog, getUsername, getName,
+} = require('../lib/gitLog');
 
 describe('GitLog', () => {
   test('should get git current branch', () => {
