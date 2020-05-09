@@ -1,7 +1,7 @@
 {
   "name": "git-log-history",
   "version": "1.0.0",
-  "description": "A CLI tool that gets current branch log commit history and writes them to a pull request template",
+  "description": "A CLI tool that gets current branch log commit history and prints them to stdout or writes them to a file",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
