@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/neodmy/git-pr-template-maker#readme",
   "dependencies": {
-    "gitlog": "^4.0.0"
+    "gitlog": "^4.0.0",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

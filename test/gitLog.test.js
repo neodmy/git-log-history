@@ -1,4 +1,6 @@
-const { getCurrentBranch, getLog, getUsername } = require('../lib/gitLog');
+const {
+  getCurrentBranch, getLog, getUsername, getName,
+} = require('../lib/gitLog');
 
 describe('GitLog', () => {
   test('should get git current branch', () => {
@@ -11,7 +13,12 @@ describe('GitLog', () => {
     expect(result).not.toBe(undefined);
   });
 
-  it('should get git current branch logs', () => {
+  test('should get git username', () => {
+    const result = getName();
+    expect(result).not.toBe(undefined);
+  });
+
+  test('should get git current branch logs', () => {
     const result = getLog();
     expect(result).not.toBe(undefined);
   });
