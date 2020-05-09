@@ -1,10 +1,10 @@
 {
-  "name": "git-pr-template-maker",
+  "name": "git-commit-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool that gets current branch log commit history and writes them to a pull request template",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --coverage",
+    "test": "jest --verbose",
     "lint": "eslint ."
   },
   "husky": {
@@ -15,14 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neodmy/git-pr-template-maker.git"
+    "url": "git+https://github.com/neodmy/git-commit-parser.git"
   },
-  "author": "David Miguel Yusta",
+  "keywords": [
+    "git",
+    "commit",
+    "parser"
+  ],
+  "author": "David Miguel Yusta (david.yusta@guidesmiths.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neodmy/git-pr-template-maker/issues"
+    "url": "https://github.com/neodmy/git-commit-parser/issues"
   },
-  "homepage": "https://github.com/neodmy/git-pr-template-maker#readme",
+  "homepage": "https://github.com/neodmy/git-commit-parser#readme",
   "dependencies": {
     "gitlog": "^4.0.0",
     "yargs": "^15.3.1"
