@@ -19,8 +19,8 @@
   },
   "keywords": [
     "git",
-    "commit",
-    "parser"
+    "log",
+    "history"
   ],
   "author": "David Miguel Yusta (david.yusta@guidesmiths.com)",
   "license": "ISC",
