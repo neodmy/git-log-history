@@ -4,7 +4,7 @@ const yargs = require('yargs');
 const { renderLog } = require('./lib/generator');
 
 const options = yargs
-  .scriptName('git-commit-parser')
+  .scriptName('git-log-history')
   .wrap(null)
   .usage('Usage: $0 -f <file> [options]')
   .alias('h', 'help')

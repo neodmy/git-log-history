@@ -1,4 +1,4 @@
-# Git commit parser
+# Git log history
 
 A CLI tool that gets current branch log commit history and writes them to a pull request template
 
@@ -17,7 +17,7 @@ Requires [git](https://git-scm.com/) to be installed and `.gitconfig` file to in
 ## Installation
 
 ```cmd
-npm install git-commit-parser
+npm install git-log-history
 ```
 ---
 ## Features
@@ -80,10 +80,10 @@ Please add here issues/Prs context and actions if needed as a list
 <% changelog %>
 ```
 
-Run `git-commit-parser`:
+Run `git-log-history`:
 
 ```cmd
-git-commit-parser -f .github/pull_request_template.md
+git-log-history -f .github/pull_request_template.md
 ```
 `<% changelog %>` will be replace with current branch commit history with default format:
 
@@ -97,14 +97,14 @@ git-commit-parser -f .github/pull_request_template.md
 As mentioned before, pattern in target file can be configured. For example, pattern `*? something ¿*` in target file can be replaced with:
 
 ```cmd
-git-commit-parser -f .github/pull_request_template.md -p "*? something ¿*" 
+git-log-history -f .github/pull_request_template.md -p "*? something ¿*" 
 ```
 
 ##### Customized commit log history
-Changelog can be configured too. `git-commit-parser` will append to `git log --pretty=` ([docs](https://git-scm.com/docs/pretty-formats)) any valid option provided with `-l, --log`. Running it like this:
+Changelog can be configured too. `git-log-history` will append to `git log --pretty=` ([docs](https://git-scm.com/docs/pretty-formats)) any valid option provided with `-l, --log`. Running it like this:
 
 ```cmd
-git-commit-parser -f .github/pull_request_template.md -l short
+git-log-history -f .github/pull_request_template.md -l short
 ```
 target file pattern will be replace with `short` option, giving something similar to:
 
