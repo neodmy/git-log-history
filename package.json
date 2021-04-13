@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/neodmy/git-log-history#readme",
   "dependencies": {
-    "gitlog": "^4.0.0",
+    "gitlog": "^4.0.4",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
